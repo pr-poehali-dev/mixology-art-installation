@@ -54,6 +54,9 @@ const Index = () => {
       >
         <div className="absolute inset-0 opacity-60 [background:radial-gradient(70%_50%_at_50%_45%,hsl(156_28%_22%),transparent_70%)]" />
         <img src={LOGO} alt="Миксология" className="relative w-44 animate-scale-in md:w-56" />
+        <p className="relative mt-6 animate-fade-in font-serif text-xl font-light italic tracking-wide text-gold-soft [animation-delay:0.6s] md:text-2xl">
+          Праздник уже здесь!
+        </p>
       </div>
 
       <div ref={ref} className={`transition-opacity duration-1000 ${revealed ? 'opacity-100' : 'opacity-0'}`}>
@@ -70,7 +73,7 @@ const Index = () => {
               <a href="#works" className="opacity-80 transition hover:opacity-100">Праздники</a>
               <a href="#booking" className="opacity-80 transition hover:opacity-100">Бронь</a>
             </div>
-            <a href="#booking" className="border border-gold/40 px-5 py-2 font-display text-[0.72rem] uppercase tracking-[0.25em] text-gold transition hover:bg-gold hover:text-emerald-deep">
+            <a href="#booking" className="bg-gold px-6 py-2.5 font-display text-[0.74rem] font-medium uppercase tracking-[0.22em] text-emerald-deep shadow-[0_0_24px_hsl(43_55%_62%/0.35)] transition hover:bg-gold-soft hover:shadow-[0_0_32px_hsl(43_55%_62%/0.55)]">
               Заказать
             </a>
           </nav>
