@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 const LOGO = 'https://cdn.poehali.dev/projects/a7a4840f-4ba4-4174-8190-f949c4f4c314/bucket/d5d994ea-5ace-4999-8ccc-29cbd5754dbb.png';
+const LOGO2 = 'https://cdn.poehali.dev/projects/a7a4840f-4ba4-4174-8190-f949c4f4c314/bucket/3bf6060c-1439-4901-9ec6-5248da064d17.jpg';
 const HERO = 'https://cdn.poehali.dev/projects/a7a4840f-4ba4-4174-8190-f949c4f4c314/bucket/673fc984-ed9e-475f-adb0-769b34f3c42a.png';
 
 const services = [
@@ -59,7 +60,11 @@ const Index = () => {
         {/* Навигация */}
         <header className="fixed left-0 right-0 top-0 z-30">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-            <img src={LOGO} alt="Миксология" className="h-11 w-auto opacity-90" />
+            <div className="flex items-center gap-3">
+              <img src={LOGO} alt="Миксология" className="h-11 w-auto opacity-90" />
+              <span className="h-7 w-px bg-gold/30" />
+              <img src={LOGO2} alt="Бюро Важных Событий" className="h-10 w-10 rounded-full bg-gold-soft p-1 object-contain" />
+            </div>
             <div className="hidden gap-9 font-display text-[0.72rem] font-light uppercase tracking-[0.28em] text-gold-soft md:flex">
               <a href="#services" className="opacity-80 transition hover:opacity-100">Услуги</a>
               <a href="#works" className="opacity-80 transition hover:opacity-100">Праздники</a>
