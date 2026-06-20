@@ -20,10 +20,21 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				display: ['Cormorant', 'serif'],
+				display: ['Oswald', 'sans-serif'],
+				serif: ['Cormorant', 'serif'],
 				body: ['"Golos Text"', 'sans-serif']
 			},
 			colors: {
+				gold: {
+					DEFAULT: 'hsl(43 55% 62%)',
+					soft: 'hsl(43 45% 75%)',
+					deep: 'hsl(40 50% 48%)'
+				},
+				emerald: {
+					DEFAULT: 'hsl(158 45% 14%)',
+					deep: 'hsl(160 50% 9%)',
+					light: 'hsl(156 28% 22%)'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

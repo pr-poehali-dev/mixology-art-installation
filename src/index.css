@@ -4,33 +4,33 @@
 
 @layer base {
   :root {
-    --background: 40 30% 96%;
-    --foreground: 222 30% 14%;
+    --background: 160 50% 9%;
+    --foreground: 43 35% 88%;
 
-    --card: 40 30% 98%;
-    --card-foreground: 222 30% 14%;
+    --card: 158 45% 14%;
+    --card-foreground: 43 35% 88%;
 
-    --popover: 40 30% 98%;
-    --popover-foreground: 222 30% 14%;
+    --popover: 158 45% 14%;
+    --popover-foreground: 43 35% 88%;
 
-    --primary: 222 38% 18%;
-    --primary-foreground: 40 30% 97%;
+    --primary: 43 55% 62%;
+    --primary-foreground: 160 50% 9%;
 
-    --secondary: 38 22% 90%;
-    --secondary-foreground: 222 30% 18%;
+    --secondary: 156 28% 22%;
+    --secondary-foreground: 43 35% 88%;
 
-    --muted: 38 18% 89%;
-    --muted-foreground: 220 10% 42%;
+    --muted: 156 25% 18%;
+    --muted-foreground: 43 20% 65%;
 
-    --accent: 222 38% 18%;
-    --accent-foreground: 40 30% 97%;
+    --accent: 43 55% 62%;
+    --accent-foreground: 160 50% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 36 16% 84%;
-    --input: 36 16% 84%;
-    --ring: 222 38% 18%;
+    --border: 156 25% 24%;
+    --input: 156 25% 24%;
+    --ring: 43 55% 62%;
 
     --radius: 0.25rem;
 
@@ -106,10 +106,26 @@
   inset: 0;
   pointer-events: none;
   z-index: 50;
-  opacity: 0.035;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .tracking-luxe {
   letter-spacing: 0.42em;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(180deg, hsl(43 55% 75%), hsl(40 50% 52%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hairline {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(43 55% 62% / 0.5),
+    transparent
+  );
 }
